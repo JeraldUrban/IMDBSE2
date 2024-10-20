@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrow Equipment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <a href="#" class="back-btn" id="back-btn">Back</a> 
+        <header>
+            <h2>Borrow Equipment</h2>
+        </header>
+        
+        <main>
+            <h3>Enter Equipment Code</h3>
+            <form id="borrow-form">
+                <label for="equipment-code">Equipment Code:</label>
+                <input type="text" id="equipment-code" name="equipment-code" placeholder="Enter code here" required>
+                <button type="submit">Next</button>
+            </form>
+        </main>
+
+        <!-- Error Popup Modal -->
+        <div id="error-modal" class="modal">
+            <div class="modal-content">
+                <h3>ERROR</h3>
+                <p>Equipment code does not exist.</p>
+                <button id="close-modal" class="close-btn">OK</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="borrow.js"></script>
+</body>
+</html>

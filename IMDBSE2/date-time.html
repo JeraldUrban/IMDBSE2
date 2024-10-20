@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Date and Time</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="borrow.html" id="back-button" class="back-btn"> &lt; Back </a>
+        </header>
+        
+        <main>
+            <h3>Enter Date and Time of Use</h3>
+            <div class="date-time-picker">
+                <input type="date" id="use-date" required>
+                <div class="time-selector">
+                    <label for="start-time">Start Time:</label>
+                    <input type="time" id="start-time" required>
+
+                    <label for="end-time">End Time:</label>
+                    <input type="time" id="end-time" required>
+                </div>
+                <button id="submit-datetime" type="submit">Next</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="datetime.js"></script>
+</body>
+</html>

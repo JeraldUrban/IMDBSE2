@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipment Borrowing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>UNIVERSITY OF BAGUIO</h1>
+            <p>SCHOOL OF INFORMATION TECHNOLOGY</p>
+            <p>Telephone: (074) 442-3071 &nbsp;&nbsp;&nbsp; Website: ubaguio.edu &nbsp;&nbsp;&nbsp; UB@e.ubaguio.edu</p>
+        </header>
+
+        <main>
+            <h2>Equipment Borrowing System</h2>
+            <form method="post">
+                <div class="input-group">
+                    <label for="email"><i class="fas fa-user"></i></label>
+                    <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                
+                <div class="input-group">
+                    <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                    <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+                </div>
+                
+                <div class="roles">
+                    <input type="radio" id="borrower" name="role" value="borrower" required>
+                    <label for="borrower">Borrower</label>
+                    <input type="radio" id="staff" name="role" value="staff">
+                    <label for="staff">Staff</label>
+                    <input type="radio" id="admin" name="role" value="admin">
+                    <label for="admin">Admin</label>
+                </div>
+        
+                <button type="submit" class="sign-in">Sign In</button>
+                <a href="#" class="forgot-password">Forgot password?</a>
+            </form>
+        </main>
+        
+    </div>
+
+    <div id="error-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>ERROR</h3>
+            <p>Entered details do not match any staff/admin accounts.</p>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
